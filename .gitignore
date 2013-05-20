@@ -1,1 +1,6 @@
-_site/
+_site
+.DS_Store
+
+# For Grunt npm modules
+node_modules
+_tmp
