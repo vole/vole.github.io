@@ -2,3 +2,4 @@ name: Vole
 pygments: true
 exclude: [CONTRIBUTING.md, README.md, sass, config.rb, package.json, Gruntfile.js, node_modules, CNAME]
 permalink: pretty
+debug: false

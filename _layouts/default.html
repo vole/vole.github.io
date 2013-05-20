@@ -9,18 +9,20 @@
   <meta name="description" content="The Vole website">
   <link rel="icon" href="/img/favicon.png" type="image/png" />
 
-  <!-- syntax highlighting CSS -->
-  <link rel="stylesheet" href="/css/syntax.css">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/main.css">
+  <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="/css/main.css" rel="stylesheet" media="screen">
+  <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
   <header>
     {% include header.html %}
   </header>
   <main role="main">
-    {{ content }}
+    <div class="container">
+      {{ content }}
+    </div>
   </main>
+
+  {% include scripts.html %}
 </body>
 </html>
