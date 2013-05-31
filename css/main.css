@@ -1,3 +1,16 @@
 body {
   padding-top: 60px;
 }
+
+#hero {
+  margin: 0 auto 40px auto;
+  width: 170px;
+}
+
+#hero-img {
+  margin: 0 0 10px 0;
+}
+
+#vole-title {
+  font-size: 75px;
+}
