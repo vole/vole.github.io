@@ -13,7 +13,7 @@ title: Vole.cc
 
       <h3>Peer-to-peer social web</h3>
       <p>
-        Vole is a web-based social network that runs in your browser, without a central server. It's built on the power of Bittorrent, Go and Ember.js.
+        Vole is a web-based social network that you use in your browser, without a central server. It's built on the power of Bittorrent, Go and Ember.js.
       </p>
 
       <h3>Screenshot</h3>
@@ -25,6 +25,17 @@ title: Vole.cc
       </p>
       <p>
         This folder is shared with other Vole users by giving out a read-only key that allows them to see a stream of your posts, updated live on their computers. By exchanging keys with your friends or people who you'd like to follow, you can form a network that is self-supporting and self-controlled.
+      </p>
+
+      <h3>Technical details</h3>
+      <p>
+        Vole has a web frontend and a backend. The backend is a simple web server running on your local machine (written in Go). This backend serves data to the browser as JSON over REST endpoints, and writes .json files back to your hard drive in a structured way. Your data is thus available locally as simple text files in JSON format.
+      </p>
+      <p>
+        Because Go applications compile to a single binary file, you don't have to install any dependencies to run Vole. No language runtime or virtual machine. No Ruby On Rails, Python or node.js. This makes Vole easy to run and distribute.
+      </p>
+      <p>
+        The core Vole application doesn't yet manage any of the syncronization, this is handled by Bittorrent Sync and potentially any other folder sync application that you may find suitable.
       </p>
 
       <h3>Why another network?</h3>
@@ -39,7 +50,7 @@ title: Vole.cc
 
       <h4>Single point of failure</h4>
       <p>
-        When the servers go down, the network goes down. This opens up an opportunity for attackers to run denial-of-service attacks and otherwise attempt to disrupt the network by going after the central point. The Vole network does not have a single point of failure.
+        When the servers go down, the network goes down. This opens up an opportunity for attackers to run denial-of-service attacks and otherwise attempt to disrupt the network by going after the central point. The Vole network is designed to not have a single point of failure.
       </p>
 
       <h4>Censorship</h4>
@@ -59,12 +70,17 @@ title: Vole.cc
 
       <h4>Cross-platform</h4>
       <p>
-        Our goal is to be totally cross-platform, and by building on existing open web standards, Vole can be accessed from any device with a web browser.
+        Our goal is to be totally cross-platform, and by building on existing open web standards, Vole can be accessed from any device with a web browser. We currently have builds for Mac, Windows and Linux and are using HTML5 best practices in our front-end development.
       </p>
 
       <h4>Open source</h4>
       <p>
         With a liberal MIT license, Vole is available for anyone to use, modify or distribute.
+      </p>
+
+      <h3>Get started!</h3>
+      <p>
+        If you're an interested developer, get started right now, we have pre-release builds available and instructions for contributing. Check out the <a href="https://github.com/vole/vole">Vole Github repo</a>.
       </p>
 
       <h3>Current Vole users</h3>
